@@ -9,7 +9,7 @@ const numbersCheck = document.querySelector("#numbers");
 const symbolsCheck = document.querySelector("#symbols");
 const indicator = document.querySelector("[data-indicator]");
 const generateBtn = document.querySelector(".generateBtn");
-const allCheckBox = document.querySelectorAll("input[type=checkbox");
+const allCheckBox = document.querySelectorAll("input[type=checkbox]");
 const symbols = '~`!@#$%^&*()_-+={[}]|:;"<,>.?/';
 
 // set password length and input slider background
