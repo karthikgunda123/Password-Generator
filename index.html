@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+</head>
+<body>
+<div>
+    <h1>Password Generator</h1>
+    <div class="display-container">
+        <input
+                readonly
+                placeholder="Password"
+                class="display"
+                data-passwordDisplay
+        />
+        <button data-copy>
+            <span data-copyMsg></span>
+            <img src="./assets/copy.svg" alt="copy" width="24" height="24" />
+        </button>
+    </div>
+    <div class="input-container">
+        <div class="length-container">
+            <p>Password Length</p>
+            <p data-lengthDisplay></p>
+        </div>
+
+        <!-- Slider -->
+        <input
+                type="range"
+                min="1"
+                max="20"
+                step="1"
+                class="slider"
+                data-lengthSlider
+        />
+
+        <!-- CheckBoxes -->
+        <div >
+            <input type="checkbox" id="uppercase" />
+            <label for="uppercase">Include Uppercase Letters</label>
+        </div>
+        <div >
+            <input type="checkbox" id="lowercase" />
+            <label for="lowercase">Include Lowercase Letters</label>
+        </div>
+        <div >
+            <input type="checkbox" id="numbers" />
+            <label for="numbers">Include Numbers</label>
+        </div>
+        <div >
+            <input type="checkbox" id="symbols" />
+            <label for="symbols">Include Symbols</label>
+        </div>
+
+        <!-- Strength Section -->
+        <div class="strength-container">
+            <p>Strength</p>
+            <div class="indicator" data-indicator></div>
+        </div>
+        <!-- Generate Password -->
+        <button class="generateBtn">Generate Password</button>
+    </div>
+</div>
+</body>
+</html>
